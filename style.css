@@ -1,0 +1,96 @@
+#logo{
+width: 20%;
+display: block;
+padding: 0 0 0 600px; 
+}
+/* To target an Id, you gotta use a # */
+
+body{
+    /*font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 20px; */
+
+    font: 15px/20px arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Global. This will apply to everything that has the container */
+.container{
+    width: 80%;
+   margin: auto; /* This will set the margins to the middle */
+overflow: hidden;
+/* This will hide the scrollbar if the stuff goes over the div. */
+}
+
+/*background 
+#background{
+
+}
+img */
+/*Header. HTML5 stuff like this just needs the name to be called*/
+header{
+padding-top: 30px;
+background: url("./imgs/San-Diego-Skyline.jpg") no-repeat 0 -600px;
+/*Makes sure the image will not repeat*/
+background-size: cover;
+
+/*background-position: 0% 20%;*/
+/*This is how to move the big picture up and down in css3  */
+}
+
+header a{ /*This targets the text of the links*/
+    color: white; 
+    text-decoration: none; /*This removes the underline of links*/
+    text-transform: uppercase; /*This capitalizes the words for me*/
+}
+
+header ul{ /*Now this is targetting the bullet structure that was started with this naviagation.*/
+margin: 0;
+padding: 0;
+list-style-type: none; /* This targets the bullets in the list and removes them*/
+
+}
+
+header li{
+    float: left; /*This causes the bullets to go horizontal*/
+    padding: 0 20px 0 20px ;
+    margin-left: 120px;
+    
+}
+
+#slogan{
+    text-align: center;
+    color: white;
+}
+
+#centerme{
+
+
+text-align: center;
+}
+
+header a:hover{ /*When you hover over the nav with your mouse, the links light up silver*/
+    color: silver;
+    font-weight: bold;
+}
+
+.boxes{
+    margin-top:  50px;
+}
+
+.box{
+    
+    float:left;
+    width: 30%;
+    padding: 10px;
+text-align: center;
+}
+
+.button1{
+    padding: 10px 10px 10px 10px;
+    color: clear;
+    background-color:transparent;
+
+}
