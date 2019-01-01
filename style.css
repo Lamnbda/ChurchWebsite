@@ -1,8 +1,9 @@
-#logo{
-width: 20%;
+.logo{
+width: 15%;
 display: block;
-padding: 0 0 0 600px; 
+padding: 75px 0 200px 650px; 
 }
+
 /* To target an Id, you gotta use a # */
 
 body{
@@ -24,17 +25,18 @@ overflow: hidden;
 /* This will hide the scrollbar if the stuff goes over the div. */
 }
 
-/*background 
-#background{
 
-}
-img */
 /*Header. HTML5 stuff like this just needs the name to be called*/
 header{
-padding-top: 30px;
-background: url("./imgs/San-Diego-Skyline.jpg") no-repeat 0 -600px;
-/*Makes sure the image will not repeat*/
-background-size: cover;
+padding-top: 40px;
+padding-bottom: 40px;
+background-attachment: fixed;
+border: 10px;
+background-image: url(./imgs/San-Diego-Skyline.jpg);
+/*This is how to get the background for the section*/
+opacity: 0.70;
+position: relative;
+color: white;
 
 /*background-position: 0% 20%;*/
 /*This is how to move the big picture up and down in css3  */
@@ -47,9 +49,9 @@ header a{ /*This targets the text of the links*/
 }
 
 header ul{ /*Now this is targetting the bullet structure that was started with this naviagation.*/
-margin: 0;
-padding: 0;
-list-style-type: none; /* This targets the bullets in the list and removes them*/
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /* This targets the bullets in the list and removes them*/
 
 }
 
@@ -60,14 +62,16 @@ header li{
     
 }
 
-#slogan{
+
+.slogan{
     text-align: center;
     color: white;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 4em;
 }
 
 #centerme{
-
-
+background:#f8fcff;
 text-align: center;
 }
 
@@ -77,20 +81,97 @@ header a:hover{ /*When you hover over the nav with your mouse, the links light u
 }
 
 .boxes{
+margin-left: 5%;
     margin-top:  50px;
+    margin-right: 2%;
 }
 
 .box{
     
     float:left;
     width: 30%;
-    padding: 10px;
-text-align: center;
+    padding: 15px;
+    text-align: center;
 }
 
-.button1{
-    padding: 10px 10px 10px 10px;
-    color: clear;
-    background-color:transparent;
+.weAre{
+background-color: aliceblue;
+text-align: center;
 
+}
+.button1{
+    
+text-align: center;
+transition: 0.3s;
+    padding: 10px 10px 10px 10px;
+    color: black;
+    background-color:transparent;
+    border-style: solid;
+}
+
+.button1:hover{
+    background-color: black;
+    color: silver;
+}
+
+.nextsteps{
+padding-top: 40px;
+padding-bottom: 40px;
+background-attachment: fixed;
+border: 10px;
+background-image: url(./imgs/San-Diego-Skyline.jpg);
+/*This is how to get the background for the section*/
+opacity: 0.70;
+position: relative;
+color: white;
+/*
+        background-image: url('./imgs/San-Diego-Skyline.jpg');
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:cover;
+        height:200px;
+        width:200px;
+
+        */
+        
+    }
+/*.nextStepButton{
+    padding: 10px 10px 10px 10px;
+    font: white;
+    background-color:transparent;
+    border-style: solid;
+    }
+*/
+.next2steps{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 5em;
+    }
+
+
+
+#blue{
+    font-size: 42px;
+}
+
+.resizeme{
+    width:40px;
+    height:40px;
+}
+
+.socialmedia{
+    padding-top: 40px; /*You wana center the div and not the icons themselves*/
+    padding-bottom: 40px;
+
+    text-align: center;
+
+}
+
+.container{
+    text-align: center;
+}
+
+.navBar{
+    transition: 0.3s;
 }
